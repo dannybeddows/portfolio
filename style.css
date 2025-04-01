@@ -353,6 +353,19 @@ a:hover, a:focus {
 }
 
 
+@media (max-width: 991px) {
+  .db-logo {
+    max-width: 50%;
+  }
+}
 
 
+@media (max-width: 576px) {
+  .hero-image {
+    width: 100%;         /* Full width */
+    height: auto;        /* Maintain aspect ratio */
+    max-height: 100vh;   /* Prevent overflow */
+    display: block;      /* Ensure proper alignment */
+  }
+}
 
