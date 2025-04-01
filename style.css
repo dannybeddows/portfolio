@@ -141,7 +141,7 @@ a:hover, a:focus {
   line-height: 2.3rem;
   letter-spacing: 0.01em;
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 1.7em;
   text-wrap-style: balance;
   }
  
@@ -374,6 +374,12 @@ a:hover, a:focus {
   .statement {
     font-weight:500;
     line-height:normal;
+  }
+}
+
+@media (min-width: 576px) {
+  h1 {
+    line-height: 1!important;
   }
 }
 
