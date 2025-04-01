@@ -59,6 +59,10 @@ h1 {
   font-size: 1.24rem;
 }
 
+.linkedin-icon {
+  color: #fff;
+}
+
 
 /*  .4 Global Styles  */
 
@@ -238,6 +242,7 @@ a:hover, a:focus {
   background: linear-gradient(to left, white 50%,  #ba19d3 50%, #00FF7F 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: none; /* Make sure background clips to padding box */
   background-size: 200% 100%;
   background-position: 100% 0;
   transition: background-position 0.3s ease-in-out;
