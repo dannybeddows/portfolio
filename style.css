@@ -359,13 +359,13 @@ a:hover, a:focus {
   }
 }
 
-
-@media (max-width: 576px) {
-  .hero-image {
-    width: 100%;         /* Full width */
-    height: auto;        /* Maintain aspect ratio */
-    max-height: 100vh;   /* Prevent overflow */
-    display: block;      /* Ensure proper alignment */
+/* Remove padding on mobile screens (below 576px) */
+@media (max-width: 768px) {
+  .pxxx-t {
+    padding-top: 0 !important;  /* Force padding removal on mobile */
   }
 }
+
+
+
 
