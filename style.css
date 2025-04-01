@@ -338,6 +338,11 @@ a:hover, a:focus {
 }
 
 
+.iceberg-img {
+  max-width:80%
+} 
+
+
 /*  .7 Utilities  */ 
  
 
@@ -375,6 +380,9 @@ a:hover, a:focus {
     font-weight:500;
     line-height:normal;
   }
+  .iceberg-img {
+    max-width:70%
+  }
 }
 
 @media (min-width: 576px) {
@@ -382,7 +390,6 @@ a:hover, a:focus {
     line-height: 1!important;
   }
 }
-
 
 
 
