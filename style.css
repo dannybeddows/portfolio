@@ -133,7 +133,7 @@ a:hover, a:focus {
 
 /* logo styles */
 
-.db-logo { max-width: 70% }
+.db-logo { max-width: 65% }
 
 
 /* Statement CTA Section */
@@ -344,6 +344,13 @@ a:hover, a:focus {
 /*  .8 Media Queries  */
 
 
+/* For screens between 768px and 992px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .nav-link {
+    padding-right: 1.2vw; /* 2% of viewport width */
+    padding-left: 1.2vw;  /* 2% of viewport width */
+  }
+}
 
 
 

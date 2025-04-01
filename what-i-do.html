@@ -15,28 +15,60 @@
 
 <body class="bg-dark text-light">
 
+<!-- Combined Navbar Section -->
 <section class="mt-3 mb-5">
-  <!-- Navigation Bar (Example Bootstrap Component) -->
-<div class="container">
-  <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-          <img src="/assets/tool-logos/db-logo.png" alt="Daniel Beddows Logo" class="img-fluid db-logo">
+  <div class="container">
+    <!-- Mobile Offcanvas Navbar (Shown only on small screens) -->
+    <nav class="navbar navbar-dark bg-dark fixed-top d-md-none">
+      <div class="container-fluid">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <img src="/assets/tool-logos/db-logo.png" alt="Daniel Beddows Logo" class="img-fluid db-logo p-1">
+        </a>
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 linkedin-icon">
+              <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="/what-i-do">What I Do</a></li>
+              <li class="nav-item"><a class="nav-link" href="/what-i-do">Clients</a></li>
+              <li class="nav-item"><a class="nav-link" href="/what-i-do">Contact</a></li>
+              <li class="nav-item nav-icon"><a href="https://www.linkedin.com/in/danielbeddows/" target="_blank" class="text-primary">
+                <i class="fab fa-linkedin fa-2x linkedin-icon"></i>
+              </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Desktop Navbar (Shown only on large screens and above) -->
+    <header class="d-flex justify-content-between align-items-center py-3 mb-4 d-none d-md-flex">
+      <!-- Logo Section (Left Column) -->
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 text-dark text-decoration-none">
+        <img src="/assets/tool-logos/db-logo.png" alt="Daniel Beddows Logo" class="img-fluid db-logo">
       </a>
 
-      <ul class="nav nav-pills">
-          <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Home</a></li>
-          <li class="nav-item"><a href="/what-i-do" class="nav-link">What I Do</a></li>
-          <li class="nav-item"><a href="/clients" class="nav-link">Clients</a></li>
-          <li class="nav-item"><a href="assets/db-cv-seo.pdf" target="_blank" class="nav-link">Resume</a></li>
-          <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
-          <li class="nav-item">
-              <a href="https://www.linkedin.com/in/danielbeddows/" target="_blank" class="nav-icon text-primary">
-                  <i class="fab fa-linkedin fa-2x linkedin-icon"></i>
-              </a>
-          </li>
+      <!-- Nav Section (Right Column) -->
+      <ul class="nav nav-pills ms-auto">
+        <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="/what-i-do" class="nav-link">What I Do</a></li>
+        <li class="nav-item"><a href="/clients" class="nav-link">Clients</a></li>
+        <li class="nav-item"><a href="assets/db-cv-seo.pdf" target="_blank" class="nav-link">Resume</a></li>
+        <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
+        <li class="nav-item nav-icon">
+          <a href="https://www.linkedin.com/in/danielbeddows/" target="_blank" class="text-primary">
+            <i class="fab fa-linkedin fa-2x linkedin-icon"></i>
+          </a>
+        </li>
       </ul>
-  </header>
-</div>
+    </header>
+  </div>
 </section>
 
 
