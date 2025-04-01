@@ -135,6 +135,8 @@ a:hover, a:focus {
 
 .db-logo { max-width: 65% }
 
+.footer-logo {max-width: 25%;}
+
 
 /* Statement CTA Section */
 .statement {
@@ -339,8 +341,13 @@ a:hover, a:focus {
 
 
 .iceberg-img {
-  max-width:80%
+  max-width:80%;
+  transition: filter 0.5s ease-in-out;
 } 
+
+.iceberg-img:hover {
+  filter: drop-shadow(0 0 8px rgba(2255, 255, 255, 0.8));
+}
 
 
 /*  .7 Utilities  */ 
@@ -362,12 +369,22 @@ a:hover, a:focus {
   .db-logo {
     max-width: 50%;
   }
+
+  .footer-logo {
+    max-width:40%;
+  }
 }
 
 /* Remove padding on mobile screens (below 576px) */
 @media (max-width: 768px) {
   .pxxx-t {
     padding-top: 0 !important;  /* Force padding removal on mobile */
+  }
+}
+
+@media (min-width: 576px) {
+  h1 {
+    line-height: 1!important;
   }
 }
 
@@ -383,15 +400,16 @@ a:hover, a:focus {
   .iceberg-img {
     max-width:70%;
   }
-  small {
-    word-break: break-word; /* Ensures the word wraps to the next line if it overflows */
-    white-space: normal; /* Ensure text is allowed to break */
+
+  .footer-logo {
+    max-width: 40%;
   }
+
+  .footer-strap {
+    line-height:normal;
+  }
+
 }
 
-@media (min-width: 576px) {
-  h1 {
-    line-height: 1!important;
-  }
-}
+
 
