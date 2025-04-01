@@ -366,6 +366,17 @@ a:hover, a:focus {
   }
 }
 
+@media (max-width: 576px) {
+  .lead {
+    text-wrap-style: pretty;
+    font-size: 1.1rem;
+  }
+  .statement {
+    font-weight:500;
+    line-height:normal;
+  }
+}
+
 
 
 
