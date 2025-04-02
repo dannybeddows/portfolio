@@ -99,11 +99,10 @@ a:hover, a:focus {
 
 /* Active state (when the link is active) */
 /* Styling the active menu item */
-.navbar-nav .nav-item .nav-link.active {
-  background-color: #00FF7F;  /* Light green background */
-  color: white;               /* White text */
-  border-radius: 25px;        /* Optional: rounded corners */
-  font-weight: bold;          /* Optional: bold text */
+.nav .navbar-nav .nav-item .nav-link.active {
+  background-color: transparent;  /* Light green background */
+  color: #fff; /* Add your hover color */
+  border: 1px solid #94A3B8; /* Green border for active link */
 }
 
 
