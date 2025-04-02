@@ -25,19 +25,27 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form>
+          <form action="https://formspree.io/f/mnnpgnpl"
+          method="POST">
             <div class="mb-3">
-              <label for="name" class="form-label" >Name</label>
-              <input type="text" class="form-control" id="name" required>
+              <label for="name" class="form-label" >Name:</label>
+              <input name="name" type="text" class="form-control" id="name" required>
             </div>
+
             <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" required>
+              <label for="email" class="form-label">Email:</label>
+              <input name="email" type="email" class="form-control" id="email" required>
             </div>
+
             <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="3" required></textarea>
+              <label for="message" class="form-label">Message:</label>
+              <textarea name="message" class="form-control" id="message" rows="3" required></textarea>
             </div>
+
+             <!-- Add hidden _next and _subject fields -->
+             <input type="hidden" name="_next" value="https://danielbeddows.info">
+             <input type="hidden" name="_subject" value="New submission from DB.info">
+
             <button type="submit" class="btn btn-primary">Send Message</button>
           </form>
         </div>

@@ -63,7 +63,9 @@ h1 {
   color: #fff;
 }
 
-
+.linkedin-icon:hover {
+  color: #94A3B8;
+}
 /*  .4 Global Styles  */
 
 
@@ -90,35 +92,25 @@ a:hover, a:focus {
 /* Navigation Styles */
 /* Default nav link color */
 .nav-link {
-  color: #94A3B8; 
+  color: #fff; 
   text-transform: uppercase;
   letter-spacing: 0.04rem;
 }
 
-/* Hover state (when the user hovers over the link) */
-.nav-link:hover {
-    color:#ffffff;
-  }
-
 /* Active state (when the link is active) */
-.nav-link.active {
-  color: #94A3B8; /* Bright blue from your palette */
+/* Styling the active menu item */
+.navbar-nav .nav-item .nav-link.active {
+  background-color: #00FF7F;  /* Light green background */
+  color: white;               /* White text */
+  border-radius: 25px;        /* Optional: rounded corners */
+  font-weight: bold;          /* Optional: bold text */
 }
 
-/* Optional: Change the color of the active link when it's selected */
-.nav-pills .nav-link.active {
-  background-color: #5ADEFF; /* Change the background color of active link */
-}
-
-
-  /* Make the text light color (for dark theme) */
-  .nav-link {
-    color: #fff;
-  }
 
   /* Hover effect for links */
   .nav-link:hover {
-    color: #ba19d3; /* Add your hover color */
+    color: #fff; /* Add your hover color */
+    border: 1px solid #94A3B8; /* Green border for active link */
   }
 
 .nav-icon {
@@ -360,7 +352,7 @@ a:hover, a:focus {
 
 .modal-header {
 
-  border-bottom: 1px solid #94A3B8;
+  border-bottom: 1px solid #495057
 }
 
 .form-control {
@@ -370,6 +362,10 @@ a:hover, a:focus {
 
 .form-control:focus {
   background-color: #495057
+}
+
+input, textarea {
+  color: #d3d3d3!important;
 }
 
 /*  .7 Utilities  */ 
