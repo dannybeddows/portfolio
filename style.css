@@ -66,6 +66,8 @@ h1 {
 .linkedin-icon:hover {
   color: #94A3B8;
 }
+
+
 /*  .4 Global Styles  */
 
 
@@ -318,6 +320,11 @@ a:hover, a:focus {
 }
 
 
+.custom-gradient {
+    background: linear-gradient(to right, #ba19d3, #00FF7F)!important;
+    color: white; /* Ensures text is readable */
+  }
+  
 /* bullet list */
 
 .bullet-list p {
