@@ -334,6 +334,8 @@ a:hover, a:focus {
   margin-right:20px;
 }
 
+/* iceberg SVG Img */
+
 
 .iceberg-img {
   max-width:80%;
@@ -344,6 +346,31 @@ a:hover, a:focus {
   filter: drop-shadow(0 0 8px rgba(2255, 255, 255, 0.8));
 }
 
+/* Modal Form Stylings */
+
+.modal-title {
+  color: #d3d3d3;
+  font-weight: 600;
+}
+
+
+.form-label {
+  color:#94A3B8;
+}
+
+.modal-header {
+
+  border-bottom: 1px solid #94A3B8;
+}
+
+.form-control {
+  background-color:#343A40;
+  border: none; 
+}
+
+.form-control:focus {
+  background-color: #495057
+}
 
 /*  .7 Utilities  */ 
  
