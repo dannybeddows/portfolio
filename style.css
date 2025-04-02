@@ -89,27 +89,33 @@ a:hover, a:focus {
 
 /*  .5 Layout / Sections  */
 
+/* reset bootstrap nav styles */
+
+
+
 /* Navigation Styles */
-/* Default nav link color */
 .nav-link {
   color: #fff; 
   text-transform: uppercase;
   letter-spacing: 0.04rem;
+  border: 1px solid transparent!important; /* Set initial border */
+  transition: border-color 0.1s ease-in-out; /* Smooth transition */
+  border-radius: 5px!important;
 }
 
 /* Active state (when the link is active) */
 /* Styling the active menu item */
 .nav .navbar-nav .nav-item .nav-link.active {
   background-color: transparent;  /* Light green background */
-  color: #fff; /* Add your hover color */
   border: 1px solid #94A3B8; /* Green border for active link */
 }
 
 
   /* Hover effect for links */
   .nav-link:hover {
-    color: #fff; /* Add your hover color */
-    border: 1px solid #94A3B8; /* Green border for active link */
+    border: 1px solid #94A3B8!important; /* Green border for active link */
+    background-color: transparent;
+    color: #fff;
   }
 
 .nav-icon {
@@ -305,6 +311,10 @@ a:hover, a:focus {
 .btn-outline-secondary {
   color: #94A3B8;
   border: 1px solid #94A3B8;
+}
+
+.btn-close {
+  background-color: #d3d3d3;
 }
 
 
