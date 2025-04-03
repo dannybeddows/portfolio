@@ -443,7 +443,10 @@ input, textarea {
     line-height:1.1;
   }
 
-}
+  .blockquote {
+    border: none;
+  }
 
+}
 
 
