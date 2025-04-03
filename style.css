@@ -129,7 +129,7 @@ a:hover, a:focus {
 
 .db-logo { max-width: 65% }
 
-.footer-logo {max-width: 25%;}
+.footer-logo {max-width: 20%;}
 
 
 /* Statement CTA Section */
@@ -388,8 +388,16 @@ input, textarea {
 /* For screens between 768px and 992px */
 @media (min-width: 768px) and (max-width: 991px) {
   .nav-link {
-    padding-right: 1.2vw; /* 2% of viewport width */
-    padding-left: 1.2vw;  /* 2% of viewport width */
+    padding-right: 1vw; /* 2% of viewport width */
+    padding-left: 1vw;  /* 2% of viewport width */
+  }
+  .client-logo {
+    max-width: 90%; /* Adjust this percentage as needed */
+  }
+
+  .blockquote p {
+    font-size: 1.7rem!important;
+    padding-left: revert;
   }
 }
 
