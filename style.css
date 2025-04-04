@@ -483,8 +483,8 @@ input, textarea {
     opacity: 0.15 !important; /* Optional: adjust opacity for large icons */
   }
 
-  .fs-quote-left {
-    margin-left: 0.5rem!important;
+  .fa-quote-left {
+    margin-left: 1rem!important;
   }
 
 }
