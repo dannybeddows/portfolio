@@ -244,6 +244,10 @@ a:hover, a:focus {
   background-size: 200% 100%;
 }
 
+.tools-section {
+  background:#495057;
+}
+
 
 /*  .6 Components  */
 
@@ -461,5 +465,17 @@ input, textarea {
   .tool-logo-container {
       margin-bottom: 0 !important;
     }
+
+  .carousel-indicators {
+    position: relative;
+    top: 10px; /* Adjust this value as needed */
+    margin-top: 10px; /* Adds space between the slides and indicators */
+    /* Vertically center the carousel arrows */
+  }
+    
+  .carousel-control-prev,
+  .carousel-control-next {
+  top: -25%;           /* Align to middle */
+  }
 }
 
