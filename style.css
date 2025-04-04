@@ -268,25 +268,26 @@ a:hover, a:focus {
      justify-content: center; /* Centers buttons horizontally */
  }
  
+
  .am-tag-button {
-     background: #1C9AC7;
-     color: #fff;
-     border: 1px solid #0e3b5c;
-     padding: 10px 15px;
-     border-radius: 25px; /* Rounded edges */
-     text-decoration: none;
-     white-space: nowrap; /* Prevents buttons from breaking */
-     transition: all 0.3s ease-in-out;
-     margin: 4px; /* Adds margin between buttons */
-     text-align: center; /* Aligns text inside the button */
-     text-transform: uppercase;
-     font-size: 0.8em;
- }
+  background: transparent;
+  color: #fff;
+  padding: 10px 15px;
+  border: 2px solid #ba19d3;
+  border-radius: 15px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.3s ease-in-out;
+  margin: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
  
  .am-tag-button:hover {
      color: #fff;
-     border-color: #287AB3;
-     background: #1C9AC7;
+     background: radial-gradient(#333,#ba19d3);
  }
 
  
@@ -431,6 +432,7 @@ input, textarea {
     font-size: 1.1rem;
   }
   .statement {
+    font-size: 1.4rem;
     font-weight:500;
     line-height:normal;
   }
