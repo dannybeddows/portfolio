@@ -477,5 +477,15 @@ input, textarea {
   .carousel-control-next {
   top: -25%;           /* Align to middle */
   }
+
+  .fa-quote-left, .fa-quote-right {
+    font-size: clamp(5rem, 15vw, 7rem) !important;
+    opacity: 0.15 !important; /* Optional: adjust opacity for large icons */
+  }
+
+  .fs-quote-left {
+    margin-left: 0.5rem!important;
+  }
+
 }
 
