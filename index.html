@@ -104,18 +104,23 @@
 
 <section class="mb-5 clients-section">
   <!-- Clients Section -->
-  <div class="container py-5">
-    <div class="row py-5">
-        <!-- Left Column with Image -->
-        <div class="col-md-6">
-            <img src="/assets/images/iceberg.svg" class="d-block mx-auto img-fluid iceberg-img order-sm-2" alt="iceberg seo" loading="lazy">
-                 <div class="text-center">
-                  <span class="text-secondary text-uppercase d-block pt-4 order-sm-1">Cool ideas, big expertise</span>
-                </div>
-        </div>
+  <div class="container pt-5">
+    <div class="row pt-5">
+        <!-- Left Column with Image (Corrected Order) -->
+<div class="col-md-6 d-flex flex-column h-100">
+  <!-- Flex container with responsive ordering -->
+  <div class="d-flex flex-column mb-5">
+      <!-- Text (shown FIRST on mobile, SECOND on desktop) -->
+      <div class="text-center order-1 order-md-2 pt-4 pt-md-0 mb-4">
+          <span class="text-secondary text-uppercase d-block pb-3">Cool ideas, big expertise</span>
+      </div>
+      <!-- SVG Image (shown SECOND on mobile, FIRST on desktop) -->
+      <img src="/assets/images/iceberg.svg" class="d-block mx-auto img-fluid iceberg-img order-2 order-md-1 mb-4" alt="iceberg seo" loading="lazy">
+  </div>
+</div>
 
         <!-- Right Column (All Content) -->
-        <div class="col-md-6 d-flex flex-column mt-5 justify-content-evenly align-items-center">
+        <div class="col-md-6 d-flex flex-column mt-lg-5 mb-5 mb-sm-0 justify-content-evenly align-items-center h-100">
             <!-- Caption -->
             <div class="text-center mb-4">
                 <span class="text-secondary text-uppercase pb-3 d-block">
