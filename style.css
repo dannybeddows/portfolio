@@ -89,6 +89,7 @@ a:hover, a:focus {
 }
 
 
+
 /*  .5 Layout / Sections  */
 
 /* reset bootstrap nav styles */
@@ -162,12 +163,12 @@ a:hover, a:focus {
   padding-left: 60px;
 }
 
-.quote-icon {
-  position: absolute;
-  top: -30px;
-  left: 20px;
-  font-size: 5rem; /* Large quotation mark */
-  color: #fff; /* Blue color for the quote mark */
+
+
+/* Gradient for quote icons */
+.fa-quote-left,
+.fa-quote-right {
+  color: #94A3B8;
 }
 
 /* client icons section */
@@ -480,7 +481,6 @@ input, textarea {
 
   .fa-quote-left, .fa-quote-right {
     font-size: clamp(5rem, 15vw, 7rem) !important;
-    opacity: 0.15 !important; /* Optional: adjust opacity for large icons */
   }
 
   .fa-quote-left {
