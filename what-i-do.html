@@ -49,14 +49,12 @@
         </div>
       </div>
     </nav>
-
     <!-- Desktop Navbar (Shown only on large screens and above) -->
     <header class="d-flex justify-content-between align-items-center py-3 mb-4 d-none d-md-flex">
       <!-- Logo Section (Left Column) -->
       <a href="/" class="d-flex align-items-center mb-3 mb-md-0 text-dark text-decoration-none align-items-center">
         <img src="/assets/tool-logos/db-logo.png" alt="Daniel Beddows Logo" class="img-fluid db-logo">
       </a>
-
       <!-- Nav Section (Right Column) -->
       <ul class="nav nav-pills align-items-center ms-auto">
         <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Home</a></li>
@@ -74,130 +72,89 @@
   </div>
 </section>
 
-
+<!-- Jumbotron Hero Section -->
 <div class="bg-dark text-secondary px-4 py-5 text-center">
-  <div class="py-5">
-    <h1 class="display-5 fw-bold text-white">What I do best</h1>
+  <div class="pt-5">
+    <h1 class="display-5 fw-bold text-white mb-4">What I do best</h1>
     <div class="col-lg-6 mx-auto">
-      <p class="fs-5 mb-4">I analyse and deconstruct complex websites to identify technical and on-page improvements. By evaluating competitors and aligning with Google’s best practices, I deliver enhancements that elevate a site's page one rankings.</p>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <button type="button" class="btn btn-primary custom-gradient btn-lg px-4 me-sm-3">Examples</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Clients</button>
+      <p class="fs-5 mb-4">I deconstruct and analyse complex websites to identify technical and on-page improvements.</p>
+      <!-- Added responsive image classes -->
+      <div class="gsc-performance-wrapper d-inline-block mb-4">
+        <img src="/assets/images/gsc-performance.jpg" class="gsc-performance img-fluid">
+      </div>
+      <p class="fs-5 mb-4">By realigning site architecture with Google best practices and leveraging competitor strategies, I elevate client websites in the SERP.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- How I work section -->
+<div class="container px-4 py-5" id="hanging-icons">
+  <h2 class="pb-2 custom-border">How I Approach</h2>
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-4"> <!-- Changed to row-cols-lg-4 -->
+    <div class="col d-flex align-items-start">
+      <div class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        <i class="fa-solid fa-1"></i>
+      </div>
+      <div>
+        <h3 class="fs-4 grey-title">Technical Audit & Deconstruction</h3>
+        <p>Dissecting current site architecture to elucidate pain points / areas of improvement relating to the technical processes and structural design of large websites.</p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <div class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        <i class="fa-solid fa-2"></i>
+      </div>
+      <div>
+        <h3 class="fs-4 grey-title">Competitor Structural IA Analysis</h3>
+        <p>Analysing the leading competitors for technical and structural differences that are giving them the edge. So we can better it.</p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <div class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        <i class="fa-solid fa-3"></i>
+      </div>
+      <div>
+        <h3 class="fs-4 grey-title">Technical Changes Roadmap</h3>
+        <p>Provide a roadmap that fits in with current the development cycle / objectives. Ensuring a streamlined approach to SEO changes that won't anger devs</p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <div class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        <i class="fa-solid fa-4"></i>
+      </div>
+      <div>
+        <h3 class="fs-4 grey-title">Confirmation, Support, Report</h3>
+        <p>Ensuring technical changes have been carried out to the high standards that align with web standards and Google best practices.</p>
       </div>
     </div>
   </div>
 </div>
 
 
-    <!-- Skills Section -->
-    <section class="container my-5">
-        <h2 class="text-center mb-4">Skills & Expertise</h2>
-        <div class="row">
-            <!-- Technical Skills -->
-            <div class="col-md-6 mb-4">
-                <h3>Technical Skills</h3>
-                <ul class="list-group">
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        HTML & CSS <span class="badge bg-primary">90%</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        JavaScript <span class="badge bg-primary">80%</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        React <span class="badge bg-primary">75%</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        Node.js <span class="badge bg-primary">70%</span>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Design Skills -->
-            <div class="col-md-6 mb-4">
-                <h3>Design Skills</h3>
-                <ul class="list-group">
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        UI/UX Design <span class="badge bg-primary">85%</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        Graphic Design <span class="badge bg-primary">80%</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        Prototyping <span class="badge bg-primary">90%</span>
-                    </li>
-                </ul>
-            </div>
+<!-- Full-width background section -->
+<section class="venn-section py-5" style="background-color: #495057;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-md-10">
+        <!-- Your Venn Diagram -->
+        <div class="venn-container position-relative mx-auto">
+            <!-- Circles -->
+  <div class="venn-circle circle-1 position-absolute rounded-circle"></div>
+  <div class="venn-circle circle-2 position-absolute rounded-circle"></div>
+  <div class="venn-circle circle-3 position-absolute rounded-circle"></div>
+  
+  <!-- Labels -->
+  <div class="position-absolute venn-label" style="top: 15%; left: 25%;">Digital Marketing</div>
+  <div class="position-absolute venn-label" style="top: 15%; right: 25%;">Web Development</div>
+  <div class="position-absolute venn-label" style="bottom: 10%; left: 50%;">SEO</div>
+</div>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Areas of Expertise Section -->
-    <section class="container my-5">
-        <h2 class="text-center mb-4">Areas I Work In</h2>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="web-development-icon.png" class="card-img-top" alt="Web Development">
-                    <div class="card-body">
-                        <h5 class="card-title">Web Development</h5>
-                        <p class="card-text">I specialize in creating responsive and dynamic websites using modern technologies like React, Node.js, and more.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="seo-icon.png" class="card-img-top" alt="SEO">
-                    <div class="card-body">
-                        <h5 class="card-title">SEO Optimization</h5>
-                        <p class="card-text">Helping websites rank better with on-page and off-page SEO strategies.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="design-icon.png" class="card-img-top" alt="Design">
-                    <div class="card-body">
-                        <h5 class="card-title">UI/UX Design</h5>
-                        <p class="card-text">I design user-friendly and visually appealing interfaces for web and mobile applications.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Projects Section (Optional) -->
-    <section class="container my-5">
-        <h2 class="text-center mb-4">Featured Projects</h2>
-        <div class="row">
-            <div class="col-md-6 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Project Name 1</h5>
-                        <p class="card-text">A brief description of the project and your role in it.</p>
-                        <a href="project-link" class="btn btn-primary">View Project</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Project Name 2</h5>
-                        <p class="card-text">Details about another project you worked on, with highlights of your contribution.</p>
-                        <a href="project-link" class="btn btn-primary">View Project</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to Action Section -->
-    <section class="bg-light text-center py-5">
-        <h2>Ready to Work Together?</h2>
-        <p>If you're interested in collaborating or learning more, don't hesitate to reach out!</p>
-        <a href="contact.html" class="btn btn-primary">Get in Touch</a>
-    </section>
 
 
 <!-- Expertise Section -->
@@ -242,52 +199,6 @@
     </div>
   </section>
 
-
- <!-- New Section with Two Columns -->
- <section class="my-5 py-sm-5">
-  <div class="container">
-    <!-- Create two columns -->
-    <div class="row">
-    <!-- First Column: Why Me Section -->  
-      <div class="col-md-8 mt-3">
-        <!-- Title above the sections -->
-    <span class="text-secondary mb-3 d-block text-uppercase text-center text-sm-start">Why Me?</span>
-        <div class="d-flex flex-column ms-4 ms-sm-0">
-          <li class="d-flex align-items-center py-2">
-            <p><span class="bullet"></span><strong>Native English Approach</strong> - I convey complex concepts to diverse audiences</p> 
-          </li>
-          <li class="d-flex align-items-center py-2">
-            <p><span class="bullet"></span> <strong>Passionate About Websites</strong> - curiously exploring websites since the 1990s</p>
-          </li>
-          <li class="d-flex align-items-center py-2">
-            <p><span class="bullet"></span> <strong>15 Years Experience</strong> - I've worked exclusively in SEO and the web industries</p>
-          </li>
-          <li class="d-flex align-items-center py-2">
-            <p><span class="bullet"></span> <strong>Proven Growth Expertise</strong> - tangible ranking increases for hundreds of brand sites</p>
-          </li>
-          <li class="d-flex align-items-center py-2">
-            <p><span class="bullet"></span> <strong>Strategy and Hands-on</strong> - consultative work delivery or dive straight into the code</p>
-          </li>
-        </div>
-      </div>
-      
-
-  <!-- Second Column: Blockquote Section -->
-  <div class="col-md-4 my-3 my-sm-0">
-    <blockquote class="blockquote text-sm-center text-light bg-dark p-4 position-relative overflow-hidden">
-      <!-- Start Quote Icon (3x larger) -->
-      <i class="fa-solid fa-quote-left position-absolute display-5 opacity-25 top-0 start-0 mt-4 ms-4"></i>
-      
-      <p class="mt-4 mt-sm-0 font-italic px-5 text-center">
-        I help clients boost traffic, leads, and sales by ranking their websites for a wider range of relevant keywords.
-      </p>
-      
-      <!-- End Quote Icon (3x larger) -->
-      <i class="fa-solid fa-quote-right position-absolute display-5 opacity-25 bottom-0 end-0 mb-4 me-4"></i>
-    </blockquote>
-  </div>
-</div>
-</section>
 
   
 <!-- Footer -->
