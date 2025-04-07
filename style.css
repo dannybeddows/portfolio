@@ -264,11 +264,11 @@ a:hover, a:focus {
 
 /* Gradient border wrapper */
 .gsc-performance-wrapper {
-  padding: 6px; /* Border thickness */
+  padding: 8px; /* Border thickness */
   background: linear-gradient(45deg, #ba19d3, #7DECFF, #00FF7F);
   background-size: 200% 200%;
   border-radius: 0.4rem;
-  display: inline-block; /* Wrap the image */
+  display: block; /* Wrap the image */
   animation: gradientBorder 3s ease infinite;
 }
 
@@ -334,7 +334,68 @@ a:hover, a:focus {
      background: radial-gradient(#333,#ba19d3);
  }
 
+
+ .ex-tag-button {
+  background: transparent;
+  color: #fff;
+  padding: 10px 15px;
+  border: 2px solid #4FD9FF;
+  border-radius: 15px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.3s ease-in-out;
+  margin: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
  
+.ex-tag-button:hover {
+  color: #fff;
+  background: radial-gradient(#333,#4FD9FF);
+}
+
+
+.ac-tag-button {
+  background: transparent;
+  color: #fff;
+  padding: 10px 15px;
+  border: 2px solid #00FF7F;
+  border-radius: 15px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.3s ease-in-out;
+  margin: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+ 
+.ac-tag-button:hover {
+  color: #fff;
+  background: radial-gradient(#333,#00FF7F);
+}
+
+.te-tag-button {
+  background: transparent;
+  color: #fff;
+  padding: 10px 15px;
+  border: 2px solid #94A3B8;
+  border-radius: 15px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.3s ease-in-out;
+  margin: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+ 
+.te-tag-button:hover {
+  color: #fff;
+  background: radial-gradient(#333,#94A3B8);
+}
+
 
 /*button styles */
 
@@ -425,14 +486,16 @@ input, textarea {
 }
 
 
-/*venn diagram */
+/*VENN DIAGRAM */
 
-/* Full-width background */
+/* background */
 .venn-section {
-  width: 100%;
-  /* Optional: add padding if needed */
-  padding: 4rem 0;
   background-color: #495057; 
+}
+
+.unique-title {
+  color: #1a1d20;
+  margin-left: 1.8rem!important;
 }
 
 /* Venn container (centered) */
@@ -440,16 +503,16 @@ input, textarea {
   max-width: 600px; /* Control diagram size */
   aspect-ratio: 1/0.9;
   margin: 0 auto;
-  background-color: #fff;;
+  background-color: transparent;
 }
 
 /* Keep your existing Venn circle styles */
 
 .venn-circle {
-  width: 60%;
-  height: 60%;
-  opacity: 0.2;
-  mix-blend-mode: multiply;
+  width: 70%;
+  height: 70%;
+  opacity: 0.3;
+  mix-blend-mode: none;
   transform: translate(-50%, -50%);
 }
 
@@ -466,17 +529,86 @@ input, textarea {
 }
 
 .circle-3 {
-  top: 70%;
+  top: 85%;
   left: 50%;
   background: #4ED9FE; /* Gold */
 }
 
 .venn-label {
-  font-weight: bold;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+  color: #fff;
   transform: translate(-50%, -50%);
 }
+
+.venn-label-1 {
+  top: 12%; 
+  left: 30%;
+}
+
+.venn-label-2 {
+  top: 12%; right: 8%;
+}
+
+.venn-label-3 {
+  bottom: -27%; left: 50%
+}
+
+.venn-container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-10%);
+  margin: 0 auto; /* Keeps horizontal centering */
+}
+
+.venn-center-icon {
+  /* Position at exact center */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 70%); /* Centers icon precisely */
+  
+  /* Styling (adjust as needed) */
+  color: #1a1d20;
+  font-size: 3rem; /* Icon size */
+  
+  z-index: 10; /* Ensures icon appears above circles */
+}
+
+/* Base Icon Style */
+.venn-center-icon {
+  /* Your existing styles */
+  transition: all 0.4s ease;
+}
+
+/* Gilded Fire Hover Effect */
+.venn-center-icon:hover {
+  color: transparent;
+  background: radial-gradient(
+    circle at center,
+    #fff8dc 0%,     /* light gold (cornsilk) */
+    #ffd700 25%,    /* gold */
+    #ff8c00 50%,    /* dark orange (fiery gold) */
+    #ff4500 75%,    /* orange-red */
+    #ffffff 100%    /* white shimmer */
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-shadow: 
+    0 0 6px #ffd700,
+    0 0 12px #ff8c00,
+    0 0 18px #ff4500;
+  animation: gilded-fire-pulse 1s infinite alternate;
+}
+
+/* Gilded Fire Pulse Animation */
+@keyframes gilded-fire-pulse {
+  0% {
+    filter: drop-shadow(0 0 4px #ff8c00);
+  }
+  100% {
+    filter: drop-shadow(0 0 16px #ffd700);
+  }
+}
+
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -485,7 +617,6 @@ input, textarea {
     height: 50%;
   }
 }
-
 
 
 /*  .7 Utilities  */ 

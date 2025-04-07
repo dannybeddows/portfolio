@@ -73,10 +73,10 @@
 </section>
 
 <!-- Jumbotron Hero Section -->
-<div class="bg-dark text-secondary px-4 py-5 text-center">
-  <div class="pt-5">
-    <h1 class="display-5 fw-bold text-white mb-4">What I do best</h1>
-    <div class="col-lg-6 mx-auto">
+<div class="container bg-dark text-secondary px-4 py-5 text-center">
+  <div class="row justify-content-center pt-5">
+    <div class="col-8 col-lg-10">
+      <h1 class="display-5 fw-bold text-white mb-4">What I do best</h1>
       <p class="fs-5 mb-4">I deconstruct and analyse complex websites to identify technical and on-page improvements.</p>
       <!-- Added responsive image classes -->
       <div class="gsc-performance-wrapper d-inline-block mb-4">
@@ -131,75 +131,190 @@
   </div>
 </div>
 
+ <!-- Venn Diagram Section -->
+<section class="venn-section pb-5">
+<div class="container col-xxl-8 px-4 py-5">
+  <div class="row flex-lg-row align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <!-- Venn Diagram -->
+      <div class="venn-container position-relative mx-auto">
+          <!-- Circles -->
+          <div class="venn-circle circle-1 position-absolute rounded-circle"></div>
+          <div class="venn-circle circle-2 position-absolute rounded-circle"></div>
+          <div class="venn-circle circle-3 position-absolute rounded-circle"></div>
 
-<!-- Full-width background section -->
-<section class="venn-section py-5" style="background-color: #495057;">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8 col-md-10">
-        <!-- Your Venn Diagram -->
-        <div class="venn-container position-relative mx-auto">
-            <!-- Circles -->
-  <div class="venn-circle circle-1 position-absolute rounded-circle"></div>
-  <div class="venn-circle circle-2 position-absolute rounded-circle"></div>
-  <div class="venn-circle circle-3 position-absolute rounded-circle"></div>
-  
-  <!-- Labels -->
-  <div class="position-absolute venn-label" style="top: 15%; left: 25%;">Digital Marketing</div>
-  <div class="position-absolute venn-label" style="top: 15%; right: 25%;">Web Development</div>
-  <div class="position-absolute venn-label" style="bottom: 10%; left: 50%;">SEO</div>
-</div>
-        </div>
+            <!-- Bullseye Icon (NEW) -->
+          <i class="fa-solid fa-bullseye venn-center-icon position-absolute"></i>
+          
+          <!-- Labels -->
+          <div class="position-absolute venn-label venn-label-1"><span>Digital Marketer</span></div>
+          <div class="position-absolute venn-label venn-label-2"><span>Web Developer</span></div>
+          <div class="position-absolute venn-label venn-label-3"><span>Strategist</span></div>
       </div>
     </div>
+    <div class="col-lg-6">
+      <h2 class="fw-bold lh-1 mb-3 unique-title">Uniquely Positioned</h2>
+      <ul>
+      <li><p class="lead">Commercial awareness – make things look good, realise and appreciate value of products and services</p></li>
+      <li><p class="lead">Strategic thinking – see the bigger picture, build upon systems that work, forward-thinking plan for expansion</p></li>
+      <li><p class="lead">Depth of understanding – technical fluency, data structure and literacy and analytical skills </p></li>
+    </ul>
+    </div>
   </div>
+</div>
 </section>
-
-
 
 <!-- Expertise Section -->
 <section class="tag-section">
-    <div class="container">
-      <!-- row -->
-      <div class="row mb-6 justify-content-center tag-container">
-          <!-- caption -->
-        <div class="col-lg-8 col-md-12 col-12 text-center">
-          <span class="text-primary mb-3 d-block text-uppercase fw-semibold ls-xl">Expertise:</span>
-        </div>
-            <div class="am-tag-cloud">
-                <a class="am-tag-button">Browser Caching</a> 
-                <a class="am-tag-button">Canonicalisation</a> 
-                <a class="am-tag-button">Client vs Serverside Rendering</a> 
-                <a class="am-tag-button">Core Web Vitals</a>
-                <a class="am-tag-button">Crawl Budget Optimisation</a>
-                <a class="am-tag-button">Crawling & Indexing</a> 
-                <a class="am-tag-button">Critical Rendering Path</a>
-                <a class="am-tag-button">Geolocation</a> 
-                <a class="am-tag-button">Knowledge Graph</a> 
-                <a class="am-tag-button">Hreflang & International SEO</a> 
-                <a class="am-tag-button">HTTPS & SSL</a> 
-                <a class="am-tag-button">Internal Link Optimisation</a> 
-                <a class="am-tag-button">JavaScript SEO</a> 
-                <a class="am-tag-button">Lazy Loading</a> 
-                <a class="am-tag-button">Log File Analysis</a> 
-                <a class="am-tag-button">Mobile-First Indexing</a> 
-                <a class="am-tag-button">Mixed Content Issues</a>  
-                <a class="am-tag-button">Performance Metrics</a> 
-                <a class="am-tag-button">Preloading & Prefetching</a> 
-                <a class="am-tag-button">Redirection</a> 
-                <a class="am-tag-button">Robots.txt Optimisation</a> 
-                <a class="am-tag-button">Schema Markup Structured Data</a>  
-                <a class="am-tag-button">SEO Audits</a> 
-                <a class="am-tag-button">Meta Data Optimisation</a> 
-                <a class="am-tag-button">Topic Clusters & Pillar Pages</a> 
-                <a class="am-tag-button">URL Taxonomy</a> 
-                <a class="am-tag-button">XML Sitemaps</a>
-            </div>
-        </div>
-    </div>
-  </section>
+  <div class="container">
+    <!-- row -->
+    <div class="row mb-6 justify-content-center tag-container">
+        <!-- caption -->
+      <div class="col-lg-8 col-md-12 col-12 text-center">
+        <span class="text-primary mb-3 d-block text-uppercase fw-semibold ls-xl">SEO Expertise:</span>
+      </div>
+          <div class="am-tag-cloud">
+              <a class="am-tag-button">Browser Caching</a> 
+              <a class="am-tag-button">Canonicalisation</a> 
+              <a class="am-tag-button">Client vs Serverside Rendering</a> 
+              <a class="am-tag-button">Core Web Vitals</a>
+              <a class="am-tag-button">Crawl Budget Optimisation</a>
+              <a class="am-tag-button">Crawling & Indexing</a> 
+              <a class="am-tag-button">Critical Rendering Path</a>
+              <a class="am-tag-button">Geolocation</a> 
+              <a class="am-tag-button">Knowledge Graph</a> 
+              <a class="am-tag-button">Hreflang & International SEO</a> 
+              <a class="am-tag-button">HTTPS & SSL</a> 
+              <a class="am-tag-button">Internal Link Optimisation</a> 
+              <a class="am-tag-button">JavaScript SEO</a> 
+              <a class="am-tag-button">Lazy Loading</a> 
+              <a class="am-tag-button">Log File Analysis</a> 
+              <a class="am-tag-button">Mobile-First Indexing</a> 
+              <a class="am-tag-button">Mixed Content Issues</a>  
+              <a class="am-tag-button">Performance Metrics</a> 
+              <a class="am-tag-button">Preloading & Prefetching</a> 
+              <a class="am-tag-button">Redirection</a> 
+              <a class="am-tag-button">Robots.txt Optimisation</a> 
+              <a class="am-tag-button">Schema Markup Structured Data</a>  
+              <a class="am-tag-button">SEO Audits</a> 
+              <a class="am-tag-button">Meta Data Optimisation</a> 
+              <a class="am-tag-button">Topic Clusters & Pillar Pages</a> 
+              <a class="am-tag-button">URL Taxonomy</a> 
+              <a class="am-tag-button">XML Sitemaps</a>
+          </div>
+      </div>
+  </div>
+</section>
 
+<!-- Expertise Section -->
+<section class="tag-section">
+  <div class="container">
+    <!-- row -->
+    <div class="row mb-6 justify-content-center tag-container">
+        <!-- caption -->
+      <div class="col-lg-8 col-md-12 col-12 text-center">
+        <span class="text-primary mb-3 d-block text-uppercase fw-semibold ls-xl">Wider Expertise:</span>
+      </div>
+          <div class="am-tag-cloud">
+            <a class="ex-tag-button">AI Leveraging</a>
+            <a class="ex-tag-button">Content Creation</a>
+            <a class="ex-tag-button">Copywriting</a>
+            <a class="ex-tag-button">Digital Strategy</a>
+            <a class="ex-tag-button">eCommerce</a>
+            <a class="ex-tag-button">Front-end Design</a>
+            <a class="ex-tag-button">Information Architecture</a>
+            <a class="ex-tag-button">Infrastructure & DNS</a>
+            <a class="ex-tag-button">Project Management</a>
+            <a class="ex-tag-button">SEO</a>
+            <a class="ex-tag-button">Web Development</a>
+            <a class="ex-tag-button">Web Management</a>              
+          </div>
+      </div>
+  </div>
+</section>
 
+<!-- Expertise Section -->
+<section class="tag-section">
+  <div class="container">
+    <!-- row -->
+    <div class="row mb-6 justify-content-center tag-container">
+        <!-- caption -->
+      <div class="col-lg-8 col-md-12 col-12 text-center">
+        <span class="text-primary mb-3 d-block text-uppercase fw-semibold ls-xl">Accreditations:</span>
+      </div>
+          <div class="am-tag-cloud">
+            <a class="ac-tag-button">Brightedge Certified</a>
+            <a class="ac-tag-button">CEB SHL CSS3</a>
+            <a class="ac-tag-button">CEB SHL HTML5</a>
+            <a class="ac-tag-button">Free Code Camp Certified</a>
+            <a class="ac-tag-button">Google Partner</a>
+            <a class="ac-tag-button">LinkedIn SEO Certified</a>
+            <a class="ac-tag-button">Marketo Certified</a>
+            <a class="ac-tag-button">Pi DataMetrics Certified</a>
+            <a class="ac-tag-button">Pluralsight Front End</a>
+            <a class="ac-tag-button">Pluralsight PHP</a>
+            <a class="ac-tag-button">Prince2 Qualified</a>
+            <a class="ac-tag-button">Shopify Partner</a>
+            <a class="ac-tag-button">Sololearn .JS</a>
+            <a class="ac-tag-button">Sololearn HTML</a>
+            <a class="ac-tag-button">Sololearn PHP</a>
+            <a class="ac-tag-button">Team Treehouse Certified</a>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Expertise Section -->
+<section class="tag-section">
+  <div class="container">
+    <!-- row -->
+    <div class="row mb-6 justify-content-center tag-container">
+        <!-- caption -->
+      <div class="col-lg-8 col-md-12 col-12 text-center">
+        <span class="text-primary mb-3 d-block text-uppercase fw-semibold ls-xl">Tech & Systems:</span>
+      </div>
+          <div class="am-tag-cloud">
+            <a class="te-tag-button">Adobe Analytics</a>
+            <a class="te-tag-button">Adobe Creative Suite</a>
+            <a class="te-tag-button">Ahrefs</a>
+            <a class="te-tag-button">Asana</a>
+            <a class="te-tag-button">BrightEdge</a>
+            <a class="te-tag-button">Contentful</a>
+            <a class="te-tag-button">CSS</a>
+            <a class="te-tag-button">Drupal</a>
+            <a class="te-tag-button">FTP / SSH</a>
+            <a class="te-tag-button">Figma</a>
+            <a class="te-tag-button">GitHub</a>
+            <a class="te-tag-button">Google Marketing Platform</a>
+            <a class="te-tag-button">HTML</a>
+            <a class="te-tag-button">Jira</a>
+            <a class="te-tag-button">Jet Octopus</a>
+            <a class="te-tag-button">JSON</a>
+            <a class="te-tag-button">JSX</a>
+            <a class="te-tag-button">Liquid</a>
+            <a class="te-tag-button">Magento</a>
+            <a class="te-tag-button">Majestic SEO</a>
+            <a class="te-tag-button">Monday</a>
+            <a class="te-tag-button">Omniture</a>
+            <a class="te-tag-button">PHP</a>
+            <a class="te-tag-button">Pi Datametrics</a>
+            <a class="te-tag-button">React</a>
+            <a class="te-tag-button">Regex</a>
+            <a class="te-tag-button">Salesforce</a>
+            <a class="te-tag-button">SEM Rush</a>
+            <a class="te-tag-button">Shopify</a>
+            <a class="te-tag-button">Screaming Frog</a>
+            <a class="te-tag-button">SEO Clarity</a>
+            <a class="te-tag-button">Twig</a>
+            <a class="te-tag-button">VS Code</a>
+            <a class="te-tag-button">WooCommerce</a>
+            <a class="te-tag-button">WordPress</a>
+            <a class="te-tag-button">XML</a>
+            <a class="te-tag-button">Zendesk</a>            
+          </div>
+      </div>
+  </div>
+</section>
   
 <!-- Footer -->
 <div class="container">
