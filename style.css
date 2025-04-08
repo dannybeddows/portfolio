@@ -532,6 +532,15 @@ a:hover, a:focus {
   color: transparent;
 }
 
+/* Mobile touch alternative */
+@media (hover: none) and (pointer: coarse) {
+  .iceberg-img:active {
+    filter: 
+      drop-shadow(0 0 8px rgba(173, 216, 230, 0.6)) /* Toned-down glow */
+      drop-shadow(0 0 15px rgba(135, 206, 235, 0.3));
+  }
+}
+
 /* Modal Form Stylings */
 
 .modal-title {
