@@ -29,7 +29,7 @@
 }
 
 .custom-border {
-  border-bottom: 2px solid #495057 !important; /* Your gradient's purple */
+  border-bottom: 2px solid #212529 !important; /* Your gradient's purple */
   padding-bottom: 0.5rem; /* Matches pb-2 */
 }
 
@@ -323,6 +323,12 @@ a:hover, a:focus {
   background-color: #495057;
 }
 
+/* hanging icons section */
+
+.hanging-icons {
+  background-color: #495057;
+}
+
 
 
 
@@ -492,6 +498,40 @@ a:hover, a:focus {
   filter: drop-shadow(0 0 8px rgba(2255, 255, 255, 0.8));
 }
 
+.iceberg-img {
+  max-width: 80%;
+  transition: 
+    filter 0.6s cubic-bezier(0.25, 1, 0.5, 1.5),
+    transform 0.4s ease-out;
+  transform-origin: center bottom; /* Grows from the base */
+}
+
+.iceberg-img:hover {
+  /* Glow Effects */
+  filter: 
+    drop-shadow(0 0 15px rgba(173, 216, 230, 0.8)) /* Outer blue glow */
+    drop-shadow(0 0 30px rgba(135, 206, 250, 0.6)) /* Middle glow */
+    drop-shadow(0 0 45px rgba(70, 130, 180, 0.4)); /* Deep glow */
+  
+  /* Scale + Frost */
+  transform: scale(1.02);
+  opacity: 0.95;
+  
+  /* Icy Texture (optional) */
+  --ice-color-1: #e0f7fa;
+  --ice-color-2: #b2ebf2;
+  background: 
+    linear-gradient(
+      135deg,
+      var(--ice-color-1) 0%,
+      var(--ice-color-2) 50%,
+      var(--ice-color-1) 100%
+    );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 /* Modal Form Stylings */
 
 .modal-title {
@@ -523,28 +563,22 @@ input, textarea {
 }
 
 
-/*VENN DIAGRAM */
-
-/* background */
-.venn-section {
-  background-color: #495057; 
-}
-
-.unique-title {
-  color: #1a1d20;
-  margin-left: 1.8rem!important;
-}
-
-/* Venn container (centered) */
+/* Ensure the Venn diagram is centered and keeps its size on smaller screens */
 .venn-container {
   max-width: 600px; /* Control diagram size */
   aspect-ratio: 1/0.9;
   margin: 0 auto;
   background-color: transparent;
+  position: relative;
+  top: 50%;
+  transform: translateY(-10%);
+  margin: 0 auto;
+  display: block;
+  justify-content: center;  /* Ensure alignment */
+  align-items: center;  /* Vertically align */
 }
 
-/* Keep your existing Venn circle styles */
-
+/* Venn Circle Adjustments */
 .venn-circle {
   width: 70%;
   height: 70%;
@@ -586,32 +620,16 @@ input, textarea {
 }
 
 .venn-label-3 {
-  bottom: -28%; left: 50%
-}
-
-.venn-container {
-  position: relative;
-  top: 50%;
-  transform: translateY(-10%);
-  margin: 0 auto; /* Keeps horizontal centering */
+  bottom: -28%; left: 50%;
 }
 
 .venn-center-icon {
-  /* Position at exact center */
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 70%); /* Centers icon precisely */
-  
-  /* Styling (adjust as needed) */
+  transform: translate(-50%, 70%);
   color: #1a1d20;
-  font-size: 3rem; /* Icon size */
-  
-  z-index: 10; /* Ensures icon appears above circles */
-}
-
-/* Base Icon Style */
-.venn-center-icon {
-  /* Your existing styles */
+  font-size: 3rem;
+  z-index: 10;
   transition: all 0.4s ease;
 }
 
@@ -620,11 +638,11 @@ input, textarea {
   color: transparent;
   background: radial-gradient(
     circle at center,
-    #fff8dc 0%,     /* light gold (cornsilk) */
-    #ffd700 25%,    /* gold */
-    #ff8c00 50%,    /* dark orange (fiery gold) */
-    #ff4500 75%,    /* orange-red */
-    #ffffff 100%    /* white shimmer */
+    #fff8dc 0%,
+    #ffd700 25%, 
+    #ff8c00 50%, 
+    #ff4500 75%, 
+    #ffffff 100%
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -645,15 +663,58 @@ input, textarea {
   }
 }
 
+/* Responsive adjustments: Ensure central alignment of the Venn diagram */
+@media (max-width: 992px) {
+  .venn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Keep it centered */
+    max-width: 400px; /* Reduce diagram size on smaller screens */
+  }
 
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
+  /* Adjust the size of the circles */
   .venn-circle {
     width: 50%;
     height: 50%;
   }
+
+  /* Adjust label positioning for mobile view */
+  .venn-label-1 {
+    top: 15%;
+    left: 25%;
+  }
+
+  .venn-label-2 {
+    top: 15%;
+    left: 65%;
+  }
+
+  .venn-label-3 {
+    bottom: 15%;
+    left: 50%;
+  }
+
+  /* Adjust icon positioning for smaller screens */
+  .venn-center-icon {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the icon */
+  }
+
+  /* Keep the text content vertically aligned and centered */
+  .venn-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
+
+.unique-title {
+  color: #94A3B8;
+  margin-left: 1.8rem!important;
+}
+
 
 
 /*  .7 Utilities  */ 
