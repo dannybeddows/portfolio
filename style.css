@@ -30,7 +30,8 @@
 
 .custom-border {
   border-bottom: 2px solid #212529 !important; /* Your gradient's purple */
-  padding-bottom: 0.5rem; /* Matches pb-2 */
+  padding-bottom: 1rem!important;
+
 }
 
 
@@ -489,14 +490,6 @@ a:hover, a:focus {
 /* iceberg SVG Img */
 
 
-.iceberg-img {
-  max-width:80%;
-  transition: filter 0.5s ease-in-out;
-} 
-
-.iceberg-img:hover {
-  filter: drop-shadow(0 0 8px rgba(2255, 255, 255, 0.8));
-}
 
 .iceberg-img {
   max-width: 80%;
@@ -534,12 +527,18 @@ a:hover, a:focus {
 
 /* Mobile touch alternative */
 @media (hover: none) and (pointer: coarse) {
+  .iceberg-img {
+    max-width: 80%;
+    transition: filter 0.5s ease-in-out;
+    transform: scale(1);
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.3)); /* subtle glow by default */
+  }
+
   .iceberg-img:active {
-    filter: 
-      drop-shadow(0 0 8px rgba(173, 216, 230, 0.6)) /* Toned-down glow */
-      drop-shadow(0 0 15px rgba(135, 206, 235, 0.3));
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.7)); /* glow on tap */
   }
 }
+
 
 /* Modal Form Stylings */
 
