@@ -488,9 +488,6 @@ a:hover, a:focus {
 }
 
 /* iceberg SVG Img */
-
-
-
 .iceberg-img {
   max-width: 80%;
   transition: 
@@ -525,17 +522,21 @@ a:hover, a:focus {
   color: transparent;
 }
 
-/* Mobile touch alternative */
+/* Improved mobile touch handling */
 @media (hover: none) and (pointer: coarse) {
   .iceberg-img {
-    max-width: 80%;
-    transition: filter 0.5s ease-in-out;
-    transform: scale(1);
-    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.3)); /* subtle glow by default */
+    /* Remove hover effects that don't work well on mobile */
+    filter: none;
+    transform: none;
+    
+    /* Add a persistent subtle glow for visibility */
+    filter: drop-shadow(0 0 8px rgba(173, 216, 230, 0.5));
   }
-
+  
+  /* Optional: Add a tap animation */
   .iceberg-img:active {
-    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.7)); /* glow on tap */
+    transform: scale(0.98);
+    transition: transform 0.2s ease;
   }
 }
 
