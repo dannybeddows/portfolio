@@ -522,21 +522,18 @@ a:hover, a:focus {
   color: transparent;
 }
 
-/* Improved mobile touch handling */
+/* Replace your current mobile media query with this: */
 @media (hover: none) and (pointer: coarse) {
   .iceberg-img {
-    /* Remove hover effects that don't work well on mobile */
-    filter: none;
-    transform: none;
+    /* Permanent glow without interaction */
+    filter: 
+      drop-shadow(0 0 8px rgba(173, 216, 230, 0.7)) /* Base glow */
+      drop-shadow(0 0 16px rgba(135, 206, 250, 0.4)); /* Outer spread */
     
-    /* Add a persistent subtle glow for visibility */
-    filter: drop-shadow(0 0 8px rgba(173, 216, 230, 0.5));
-  }
-  
-  /* Optional: Add a tap animation */
-  .iceberg-img:active {
-    transform: scale(0.98);
-    transition: transform 0.2s ease;
+    /* Disable all hover transformations */
+    transform: none !important;
+    background: none !important;
+    transition: none !important;
   }
 }
 
