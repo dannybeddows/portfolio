@@ -76,11 +76,13 @@
 
 
 <section class="my-5">
-  <!-- Combined Clients Section -->
+  <!-- Clients Section -->
   <div class="container col-xxl-8 px-4 pt-5">
+    <!-- Original row class maintained exactly as you had it -->
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <!-- Left Column - Client Logos -->
-      <div class="col-lg-6">
+      <!-- ONLY CHANGE: Added order-2 order-lg-0 -->
+      <div class="col-lg-6 order-2 order-lg-0">
         <div class="d-flex flex-column justify-content-evenly align-items-center" style="min-height: 100%;">
           <!-- Caption -->
           <div class="text-center mb-4">
@@ -109,14 +111,15 @@
             <div class="col-6 mb-2 d-flex justify-content-center">
                 <img class="client-logo img-fluid" src="/assets/client-logos/se-1.png" alt="seek logo">
             </div>
-        </div>
+          </div>
         </div>
       </div>
       
       <!-- Right Column - Text Content -->
-      <div class="col-lg-6 pt-5">
+      <!-- ONLY CHANGE: Added order-1 order-lg-0 -->
+      <div class="col-lg-6 pt-5 order-1 order-lg-0 mb-5">
         <h1 class="display-5 fw-bold mb-3">Client Work</h1>
-        <p class="lead">I’ve helped media giants, in-house teams, and boutique agencies transform hundreds of complex websites by recalibrating them around Google's best practices.</p>
+        <p class="lead">I've helped media giants, in-house teams, and boutique agencies transform hundreds of complex websites by recalibrating them around Google's best practices.</p>
         <div class="d-md-flex justify-content-md-start">
           <a href="/assets/db-cv-seo.pdf" target="_blank">
             <button type="button" class="btn btn-primary btn-lg px-4 me-2 custom-gradient">View CV</button>

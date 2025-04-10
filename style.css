@@ -107,9 +107,6 @@ a:hover, a:focus {
 
 /*  .5 Layout / Sections  */
 
-/* reset bootstrap nav styles */
-
-
 
 /* Navigation Styles */
 .nav-link {
@@ -330,6 +327,21 @@ a:hover, a:focus {
   background-color: #495057;
 }
 
+/* About page hero section */
+
+.hero-container {
+  position: relative;
+  height: 100vh;
+  max-height: 600px; /* Added max-height */
+  min-height: 400px; /* Adjusted min-height */
+  overflow: hidden;
+}
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
 
 
@@ -488,52 +500,65 @@ a:hover, a:focus {
 }
 
 /* iceberg SVG Img */
+/* ===== BASE STYLES (applies to all devices) ===== */
 .iceberg-img {
   max-width: 80%;
-  transition: 
-    filter 0.6s cubic-bezier(0.25, 1, 0.5, 1.5),
-    transform 0.4s ease-out;
-  transform-origin: center bottom; /* Grows from the base */
-}
-
-.iceberg-img:hover {
-  /* Glow Effects */
+  /* Permanent subtle glow for all devices */
   filter: 
-    drop-shadow(0 0 15px rgba(173, 216, 230, 0.8)) /* Outer blue glow */
-    drop-shadow(0 0 30px rgba(135, 206, 250, 0.6)) /* Middle glow */
-    drop-shadow(0 0 45px rgba(70, 130, 180, 0.4)); /* Deep glow */
-  
-  /* Scale + Frost */
-  transform: scale(1.02);
-  opacity: 0.95;
-  
-  /* Icy Texture (optional) */
-  --ice-color-1: #e0f7fa;
-  --ice-color-2: #b2ebf2;
-  background: 
-    linear-gradient(
-      135deg,
-      var(--ice-color-1) 0%,
-      var(--ice-color-2) 50%,
-      var(--ice-color-1) 100%
-    );
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+    drop-shadow(0 0 5px rgba(173, 216, 230, 0.4))
+    drop-shadow(0 0 10px rgba(135, 206, 250, 0.2));
 }
 
-/* Replace your current mobile media query with this: */
-@media (hover: none) and (pointer: coarse) {
+/* ===== DESKTOP-ONLY HOVER EFFECTS ===== */
+@media (hover: hover) and (pointer: fine) {
   .iceberg-img {
-    /* Permanent glow without interaction */
+    transition: 
+      filter 0.6s cubic-bezier(0.25, 1, 0.5, 1.5),
+      transform 0.4s ease-out;
+    transform-origin: center bottom;
+  }
+  
+  .iceberg-img:hover {
     filter: 
-      drop-shadow(0 0 8px rgba(173, 216, 230, 0.7)) /* Base glow */
-      drop-shadow(0 0 16px rgba(135, 206, 250, 0.4)); /* Outer spread */
+      drop-shadow(0 0 15px rgba(173, 216, 230, 0.8))
+      drop-shadow(0 0 30px rgba(135, 206, 250, 0.6))
+      drop-shadow(0 0 45px rgba(70, 130, 180, 0.4));
+    transform: scale(1.02);
+    opacity: 0.95;
     
-    /* Disable all hover transformations */
+    /* Icy Texture */
+    --ice-color-1: #e0f7fa;
+    --ice-color-2: #b2ebf2;
+    background: 
+      linear-gradient(
+        135deg,
+        var(--ice-color-1) 0%,
+        var(--ice-color-2) 50%,
+        var(--ice-color-1) 100%
+      );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+
+/* ===== MOBILE-ONLY LOCKDOWN ===== */
+@media (hover: none) {
+  .iceberg-img {
+    /* Visual appearance */
+    filter: 
+      drop-shadow(0 0 8px rgba(173, 216, 230, 0.5))
+      drop-shadow(0 0 16px rgba(135, 206, 250, 0.3)) !important;
+    
+    /* Kill all interactions */
     transform: none !important;
-    background: none !important;
     transition: none !important;
+    background: none !important;
+    -webkit-tap-highlight-color: transparent !important;
+    
+    /* Prevent touch events */
+    pointer-events: none !important;
+    touch-action: none !important;
   }
 }
 
@@ -670,7 +695,7 @@ input, textarea {
 }
 
 /* Responsive adjustments: Ensure central alignment of the Venn diagram */
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .venn-container {
     display: flex;
     justify-content: center;
@@ -681,19 +706,36 @@ input, textarea {
 
   /* Adjust the size of the circles */
   .venn-circle {
-    width: 50%;
-    height: 50%;
+    width: 70%;
+    height: 70%;
+  }
+
+  .circle-1 {
+    top: 50%;
+    left: 40%;
+  }
+  
+  .circle-2 {
+    top: 50%;
+    left: 80%;
+  }
+  
+  .circle-3 {
+    top: 85%;
+    left: 62%;
   }
 
   /* Adjust label positioning for mobile view */
   .venn-label-1 {
-    top: 15%;
-    left: 25%;
+    top: 1%;
+    left: 30%;
   }
 
   .venn-label-2 {
-    top: 15%;
-    left: 65%;
+    top: -4%;
+    right: 0%;
+    left: 40%;
+    transform: translate(0%);
   }
 
   .venn-label-3 {
@@ -706,6 +748,7 @@ input, textarea {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /* Center the icon */
+    display: none;
   }
 
   /* Keep the text content vertically aligned and centered */
