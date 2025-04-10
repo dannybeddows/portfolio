@@ -297,11 +297,11 @@ a:hover, a:focus {
   border: 1px solid #495057;
 }
 
-#home-tab, #tab-2-tab, #tab-3-tab, #tab-4-tab {
+#home-tab, #tab-2-tab, #tab-3-tab, #tab-4-tab, #tab-5-tab  {
   color: #f5f5f5;
 }
 
-#home-tab.active, #tab-2-tab.active, #tab-3-tab.active, #tab-4-tab.active {
+#home-tab.active, #tab-2-tab.active, #tab-3-tab.active, #tab-4-tab.active, #tab-5-tab.active {
   color: #212529;
 }
 
