@@ -765,6 +765,33 @@ input, textarea {
 }
 
 
+.testimonial-card .card-up {
+  height: 120px;
+  overflow: hidden;
+  opacity: 60%;
+  z-index: 1;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.testimonial-card .avatar {
+  width: 110px;
+  margin-top: -60px;
+  overflow: hidden;
+  border: 3px solid #94A3B8;
+  border-radius: 50%;
+}
+
+.custom-border-2 {
+  border-color: #94A3B8 !important;
+}
+
+.avatar {
+  z-index: 2;
+}
+
+.fat-icon {
+  font-size: 1.4em;
+}
 
 /*  .7 Utilities  */ 
  
