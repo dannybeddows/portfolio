@@ -694,7 +694,7 @@ input, textarea {
   }
 }
 
-/* Responsive adjustments: Ensure central alignment of the Venn diagram */
+/*Venn diagram Responsive adjustments */
 @media (max-width: 991px) {
   .venn-container {
     display: flex;
@@ -726,29 +726,31 @@ input, textarea {
   }
 
   /* Adjust label positioning for mobile view */
+
+.venn-label {
+  transform: none;
+}
+
   .venn-label-1 {
-    top: 1%;
-    left: 30%;
+    top: 6%;
+    left: 10%;
   }
 
   .venn-label-2 {
-    top: -4%;
-    right: 0%;
-    left: 40%;
-    transform: translate(0%);
+    top: 6%;
+    right: -6%;
   }
 
   .venn-label-3 {
-    bottom: 15%;
+    bottom: -32%;
     left: 50%;
   }
 
   /* Adjust icon positioning for smaller screens */
   .venn-center-icon {
-    top: 50%;
-    left: 50%;
+    top: 63%;
+    left: 60%;
     transform: translate(-50%, -50%); /* Center the icon */
-    display: none;
   }
 
   /* Keep the text content vertically aligned and centered */
@@ -763,6 +765,9 @@ input, textarea {
   color: #94A3B8;
   margin-left: 1.8rem!important;
 }
+
+
+/* Testimonial Cards */
 
 
 .testimonial-card .card-up {
@@ -792,6 +797,28 @@ input, textarea {
 .fat-icon {
   font-size: 1.4em;
 }
+
+
+.black-white {
+  filter: grayscale(100%);
+}
+
+
+/* Case Studies elements */
+
+.case-studies {
+  background-color: #495057;
+}
+
+.sm-logo {
+  max-width: 100%;
+}
+
+.cs-icon {
+  max-height: 6rem;
+  width: auto;
+}
+
 
 /*  .7 Utilities  */ 
  
