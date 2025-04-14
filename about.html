@@ -79,11 +79,16 @@
  <div class="hero-container">
     <!-- Responsive Image with Picture Element -->
     <picture>
-        <!-- Mobile image (shows on screens up to 576px) -->
-        <source media="(max-width: 576px)" srcset="https://via.placeholder.com/600x900">
-        <!-- Default/desktop image -->
-        <img src="/assets/images/islands-view.jpg" alt="Hero Banner" class="hero-img">
-    </picture>
+        <!-- Mobile image (up to 767.98px) -->
+        <source srcset="/assets/images/island-view-square.jpg" media="(max-width: 767.98px)">
+        
+        <!-- Desktop image (768px and up) -->
+        <source srcset="/assets/images/islands-view.jpg" media="(min-width: 768px)">
+        
+        <!-- Fallback image tag -->
+        <img src="/assets/images/islands-view.jpg" alt="Hero Banner" class="hero-img" loading="lazy" fetchpriority="high" decoding="async">
+      </picture>
+      
     
     <!-- Overlay with Bootstrap utilities -->
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
