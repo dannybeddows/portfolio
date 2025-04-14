@@ -74,35 +74,31 @@
   </div>
 </section>
 
-
- <!-- Hero Banner Section -->
- <div class="hero-container">
+<section class="hero-container">
     <!-- Responsive Image with Picture Element -->
     <picture>
-        <!-- Mobile image (up to 767.98px) -->
-        <source srcset="/assets/images/island-view-square.jpg" media="(max-width: 767.98px)">
-        
-        <!-- Desktop image (768px and up) -->
-        <source srcset="/assets/images/islands-view.jpg" media="(min-width: 768px)">
-        
-        <!-- Fallback image tag -->
-        <img src="/assets/images/islands-view.jpg" alt="Hero Banner" class="hero-img" loading="lazy" fetchpriority="high" decoding="async">
-      </picture>
+      <!-- Mobile image (up to 767.98px) -->
+      <source srcset="/assets/images/island-view-square.jpg" media="(max-width: 767.98px)">
       
-    
+      <!-- Default (Desktop) image (768px and up) -->
+      <source srcset="/assets/images/islands-view.jpg" media="(min-width: 768px)">
+      
+      <!-- Fallback Image for unsupported browsers -->
+      <img src="/assets/images/islands-view.jpg" alt="Hero Banner" class="hero-img" loading="lazy" fetchpriority="high" decoding="async">
+    </picture>
+  
     <!-- Overlay with Bootstrap utilities -->
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
-    
+  
     <!-- Content Container -->
     <div class="container position-absolute top-50 start-50 translate-middle text-center text-white px-3">
-        <h1 class="display-3 fw-bold mb-3">Beyond the Browser</h1>
-        <p class="lead mb-4">My journey, side quests, and all the fun little things in between.</p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-           <!-- <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary Action</button> -->
-           <!-- <button type="button" class="btn btn-outline-light btn-lg px-4">Secondary Action</button> -->
-        </div>
+      <h1 class="display-3 fw-bold mb-3">Beyond the Browser</h1>
+      <p class="lead mb-4">My journey, side quests, and all the fun little things in between.</p>
     </div>
-</div>
+  </section>
+  
+  
+  
 
 
 <section class="what-section py-5">
@@ -119,7 +115,7 @@
     <div class="container py-5">
         <div class="row py-5">
             <div class="col-12">
-                <ul class="nav nav-tabs border-bottom-0" id="myTab" role="tablist">
+                <ul class="nav nav-tabs border-bottom-0 justify-content-sm-start justify-content-center" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active tab-active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
                             type="button" role="tab" aria-controls="home" aria-selected="true">My Journey</button>

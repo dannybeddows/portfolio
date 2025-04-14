@@ -352,18 +352,34 @@ a:hover, a:focus {
 
 .hero-container {
   position: relative;
-  height: 100vh;
-  max-height: 600px; /* Added max-height */
-  min-height: 400px; /* Adjusted min-height */
-  overflow: hidden;
+  width: 100%;
 }
+
 .hero-img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;  /* Ensure image respects its aspect ratio */
+  object-fit: cover; /* Make sure the image covers the container */
+  max-width: 100%; /* Ensure it doesn't stretch beyond its original size */
 }
 
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1;
+}
 
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 2;
+}
 
 
 /*  .6 Components  */
