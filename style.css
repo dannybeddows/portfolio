@@ -103,6 +103,11 @@ h4 {
   color: #94A3B8;
 }
 
+.text-white {
+  text-align: justify;
+}
+
+
 
 /*  .4 Global Styles  */
 
@@ -864,6 +869,17 @@ input, textarea {
 .case-row p {
   margin-bottom: 0!important;
 }
+
+
+/* Fire Border */ 
+
+
+
+
+
+
+
+
 
 /*  .7 Utilities  */ 
  

@@ -131,22 +131,22 @@
 
 
 <section class="case-studies py-4">
-  <div class="container my-5 py-4">
+  <div class="container mt-5 mb-4 py-4">
     <!-- Title and Strapline Row -->
-    <div class="row justify-content-end">
+    <div class="row justify-content-start"> <!-- changed from end to start -->
       <div class="col-lg-auto">
-        <div class="d-flex align-items-center flex-wrap justify-content-end gap-3">
+        <div class="d-flex align-items-center flex-wrap justify-content-start gap-3"> <!-- changed from end to start -->
+          <!-- Icon -->
+          <div class="d-flex align-items-center">
+            <img src="/assets/tool-logos/case-study-icon.png" alt="Case Study Icon" class="cs-icon img-fluid">
+          </div>
           <!-- Text Content -->
-          <div class="text-end">
+          <div class="text-start"> <!-- changed from text-end -->
             <h2 class="fw-bold mb-1">Case Studies</h2>
             <p class="mb-0">
               Recent client successes. Get in touch <br>
               to view specific examples of completed work.
             </p>
-          </div>
-          <!-- Icon -->
-          <div class="d-flex align-items-center">
-            <img src="/assets/tool-logos/case-study-icon.png" alt="Case Study Icon" class="cs-icon img-fluid">
           </div>
         </div>
       </div>
@@ -154,31 +154,45 @@
     <div class="row py-4">
       <!-- Column 1 -->
       <div class="col-md-6 mb-4">
-        <div class="p-4 rounded bg-dark">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
-            Sed nisi. Nulla quis sem at nibh elementum imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
-            Sed nisi. </p><p>Nulla quis sem at nibh elementum imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
-            Sed nisi. Nulla quis sem at nibh elementum imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
-            Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+        <div class="p-4 rounded bg-dark case-box">
+          <div class="row">
+            <!-- Left inner column: logo and title -->
+            <div class="col-md-5 mb-3">
+              <img src="/assets/client-logos/clarks-logo.png" alt="Client Logo" class="img-fluid mb-2">
+              <h2 class="fs-5">&nbsp;Technical Pitch</h2>
+            </div>
+    
+            <!-- Right inner column: website image -->
+            <div class="col-md-7 mb-3">
+              <img src="/assets/images/island-view-square.jpg" alt="Desktop View" class="img-fluid mb-2">
+            </div>
+          </div>
+          <h4 class="fw-bold">Challenge</h4>
+          <p>VML Agency brought me on for a 3-month contract to support a pitch for Clarks Shoes. While VML already had the content and on-page SEO account, they needed to secure the technical SEO and infrastructure work. My role was to identify technical SEO opportunities and create a scalable piece of work that could be used for both the pitch and execution. The challenge was to propose actionable improvements for Clarks’ technical SEO and present them in a clear, strategic way.</p>
+            <h4 class="fw-bold">Outcome</h4>
+            <p>Thanks to my detailed and strategic proposal, we were able to present a strong pitch that addressed both immediate actions and long-term technical SEO improvements for Clarks. This helped align the proposal with Clarks' business goals, showcasing its value. As a result, VML won the pitch and secured the long-term business with Clarks, reinforcing the importance of combining technical expertise with strategic business alignment.</p>
         </div>
       </div>
 
       <!-- Column 2 -->
       <div class="col-md-6 mb-4">
         <div class="p-4 rounded bg-dark">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
-          Sed nisi. Nulla quis sem at nibh elementum imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
-          Sed nisi. </p><p>Nulla quis sem at nibh elementum imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
-          Sed nisi. Nulla quis sem at nibh elementum imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
-          Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+          <div class="row">
+            <!-- Left inner column: logo and title -->
+            <div class="col-md-5 mb-3">
+              <img src="/assets/client-logos/sm-logo.png" alt="Client Logo" class="img-fluid mb-2">
+              <h2 class="fs-5">&nbsp;&nbsp;Technical Audits</h2>
+            </div>
+    
+            <!-- Right inner column: website image -->
+            <div class="col-md-7 mb-3">
+              <img src="/assets/images/island-view-square.jpg" alt="Desktop View" class="img-fluid mb-2">
+            </div>
+          </div>
+          <h4 class="fw-bold">Challenge</h4>
+          <p>Speechmatics, a leading AI speech-to-text provider, had a well-established marketing function producing high-quality content, articles, and interactive case studies. Despite this, they weren’t seeing the expected traction in Google’s organic search results. With visibility declining, they approached me to conduct a comprehensive technical investigation into why their website and assets (built on a modern JavaScript framework) were underperforming in search.</p>
+            <h4 class="fw-bold">Outcome</h4>
+            <p>Following an in-depth technical analysis, I was able to uncover some complex technical impediments that were stopping the website from reaching its true organic potential. I worked closely with marketing, product managers, and developers to align web standards with Google best practices, resulting in a strong uplift in organic performance and well-deserved visibility for the site’s high-quality content.</p>
         </div>
       </div>
     </div>
@@ -218,7 +232,7 @@
             <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp" class="img-fluid" />
           </div>
           <div class="card-body bg-dark">
-            <h4 class="fw-bold mb-4">David Bain - Great Gov</h4>
+            <h4 class="fw-bold mb-4">Rob Johnson - Mega World</h4>
             <hr />
             <p class="mt-4">
               <i class="fat-icon fas fa-quote-left pe-2"></i>Dan is a dedicated, skilled SEO expert who excels at solving complex problems...
@@ -252,7 +266,7 @@
             <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp" class="img-fluid" />
           </div>
           <div class="card-body bg-dark">
-            <h4 class="mb-4 fw-bold">Dave Bell - Solar Panels</h4>
+            <h4 class="mb-4 fw-bold">John Smith - Solar Panels</h4>
             <hr />
             <p class="dark-grey-text mt-4">
               <i class="fat-icon fas fa-quote-left pe-2"></i>Dan is a dedicated, skilled SEO expert who excels at solving complex problems...
@@ -334,6 +348,7 @@
           <a class="ac-tag-button">Makers Mark</a>
           <a class="ac-tag-button">Martini</a>
           <a class="ac-tag-button">Matches Fashion</a>
+          <a class="ac-tag-button">Methven</a>
           <a class="ac-tag-button">Midori</a>
           <a class="ac-tag-button">Mitel</a>
           <a class="ac-tag-button">Netsuite</a>
