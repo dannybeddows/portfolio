@@ -25,6 +25,20 @@
   --bs-nav-link-active-color: #5ADEFF;
 }
 
+.tabbo {
+  font-weight: 300!important;
+}
+
+.clients-section .nav-link,
+.clients-section .nav-link:hover,
+.clients-section .nav-link:focus,
+.clients-section .nav-link:active,
+.clients-section .nav-link:focus-visible {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  transition: none !important;
+}
 
 
 /* Base size */
