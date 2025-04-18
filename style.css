@@ -18,6 +18,14 @@
   box-sizing: border-box;
 }
 
+.nav {
+
+  --bs-nav-link-color: #5ADEFF;
+  --bs-nav-link-hover-color: #5ADEFF;
+  --bs-nav-link-active-color: #5ADEFF;
+}
+
+
 
 /* Base size */
 html {
@@ -84,7 +92,9 @@ h4 {
 
   color: #ffffff!important;
   font-family: 'Montserrat', sans-serif; /* Use for headings */
-  font-size: 0.9em;
+  font-size: 0.8em;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
 }
 
 .lead {
@@ -138,10 +148,11 @@ a:hover, a:focus {
 .nav-link {
   color: #fff; 
   text-transform: capitalize;
-  letter-spacing: 0.04rem;
+  letter-spacing: 0.05rem;
   border: 1px solid transparent!important; /* Set initial border */
   transition: border-color 0.1s ease-in-out; /* Smooth transition */
   border-radius: 5px!important;
+  font-weight: 600;
 }
 
 /* Active state (when the link is active) */
@@ -411,88 +422,55 @@ a:hover, a:focus {
  }
  
 
- .am-tag-button {
-  background: transparent;
-  color: #fff;
-  padding: 7px 12px;
-  border: 2px solid #ba19d3;
-  border-radius: 15px;
-  text-decoration: none;
-  white-space: nowrap;
-  transition: all 0.3s ease-in-out;
-  margin: 3px;
-  text-align: center;
-  text-transform: capitalize;
-  font-size: 0.8em;
-}
 
- 
- .am-tag-button:hover {
-     color: #fff;
-     background: radial-gradient(#333,#ba19d3);
- }
+/*new*/
 
-
- .ex-tag-button {
-  background: transparent;
-  color: #fff;
-  padding: 10px 15px;
-  border: 2px solid #4FD9FF;
-  border-radius: 15px;
-  text-decoration: none;
-  white-space: nowrap;
-  transition: all 0.3s ease-in-out;
-  margin: 4px;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 0.8em;
-}
- 
-.ex-tag-button:hover {
-  color: #fff;
-  background: radial-gradient(#333,#4FD9FF);
-}
-
-
-.ac-tag-button {
-  background: transparent;
-  color: #fff;
-  padding: 10px 15px;
-  border: 2px solid #00FF7F;
-  border-radius: 15px;
-  text-decoration: none;
-  white-space: nowrap;
-  transition: all 0.3s ease-in-out;
-  margin: 4px;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 0.8em;
-}
- 
-.ac-tag-button:hover {
-  color: #fff;
-  background: radial-gradient(#333,#00FF7F);
-}
-
+.am-tag-button,
+.ex-tag-button,
+.ac-tag-button,
 .te-tag-button {
   background: transparent;
   color: #fff;
-  padding: 10px 15px;
-  border: 2px solid #94A3B8;
+  padding: 7px 10px;
+  border: 2px solid;
   border-radius: 15px;
   text-decoration: none;
   white-space: nowrap;
   transition: all 0.3s ease-in-out;
   margin: 4px;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: capitlize;
   font-size: 0.8em;
 }
- 
-.te-tag-button:hover {
-  color: #fff;
-  background: radial-gradient(#333,#94A3B8);
+
+.am-tag-button {
+  border-color: #ba19d3;
 }
+.am-tag-button:hover {
+  background: radial-gradient(#333, #ba19d3);
+}
+
+.ex-tag-button {
+  border-color: #4ED9FE;
+}
+.ex-tag-button:hover {
+  background: radial-gradient(#333, #4ED9FE);
+}
+
+.ac-tag-button {
+  border-color: #00FF7F;
+}
+.ac-tag-button:hover {
+  background: radial-gradient(#333, #00FF7F);
+}
+
+.te-tag-button {
+  border-color: #94A3B8;
+}
+.te-tag-button:hover {
+  background: radial-gradient(#333, #94A3B8);
+}
+
 
 
 /*button styles */
