@@ -26,7 +26,8 @@
 }
 
 .tabbo {
-  font-weight: 300!important;
+  font-weight: 700 !important;
+  font-size: 0.85rem !important;
 }
 
 .clients-section .nav-link,
@@ -481,6 +482,16 @@ a:hover, a:focus {
   background: radial-gradient(#333, #94A3B8);
 }
 
+
+.tag-cloud-heading {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #F8F9FA;
+  margin-bottom: 0.75rem;
+}
 
 
 /*button styles */
