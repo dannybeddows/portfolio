@@ -187,8 +187,8 @@
 
       <!-- Second Column: Word Cycle Section -->
       <div class="col-md-4 my-3 my-sm-0">
-        <div class="bg-dark p-4 position-relative overflow-hidden" style="border-left: 4px solid #2ecc71;">
-          <div id="db-cycle-wrapper" style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem 0;">
+        <div class="bg-dark p-4 position-relative overflow-hidden cycle-container">
+          <div id="db-cycle-wrapper">
             <div class="db-cycle-label">What I Bring</div>
             <div class="db-cycle-window">
               <div class="db-cycle-track">
@@ -211,11 +211,12 @@
 </section>
 
 <script>
-  (function() {
+  document.addEventListener('DOMContentLoaded', function() {
     const track = document.querySelector('.db-cycle-track');
     const items = document.querySelectorAll('.db-cycle-item');
     const dots  = document.querySelectorAll('.db-cycle-dot');
     let current = 0;
+    items[0].style.opacity = '1';
     setInterval(() => {
       items[current].style.opacity = '0.2';
       dots[current].classList.remove('active');
@@ -224,7 +225,7 @@
       items[current].style.opacity = '1';
       dots[current].classList.add('active');
     }, 3000);
-  })();
+  });
 </script>
 
 
