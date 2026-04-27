@@ -82,17 +82,16 @@ html {
 
 
 body {
-  font-family: 'Manrope', sans-serif;/* Use for body text */
+  font-family: 'Nunito', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif; /* Use for headings */
+  font-family: 'Outfit', sans-serif;
 }
 
 h1 {
   letter-spacing: 0.4px;
 }
-
 
 h4 {
   font-size: 1rem;
@@ -103,9 +102,8 @@ h4 {
 }
 
 .text-secondary {
-
   color: #ffffff!important;
-  font-family: 'Montserrat', sans-serif; /* Use for headings */
+  font-family: 'Outfit', sans-serif;
   font-size: 0.8em;
   font-weight: 500;
   letter-spacing: 0.03rem;
@@ -137,10 +135,8 @@ h4 {
 
 
 li, p, a {
-  font-family: 'Manrope', sans-serif; /* Use for body text */
+  font-family: 'Nunito', sans-serif;
 }
-
-
 /* Remove the default color and underline for links */
 a {
   color: inherit; /* Inherit color from the parent element (or specify your color) */
@@ -162,7 +158,7 @@ a:hover, a:focus {
 .nav-link {
   color: #fff; 
   text-transform: capitalize;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.09rem;
   border: 1px solid transparent!important; /* Set initial border */
   transition: border-color 0.1s ease-in-out; /* Smooth transition */
   border-radius: 5px!important;
