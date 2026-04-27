@@ -212,19 +212,29 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    const track = document.querySelector('.db-cycle-track');
     const items = document.querySelectorAll('.db-cycle-item');
     const dots  = document.querySelectorAll('.db-cycle-dot');
     let current = 0;
-    items[0].style.opacity = '1';
-    setInterval(() => {
-      items[current].style.opacity = '0.2';
-      dots[current].classList.remove('active');
-      current = (current + 1) % items.length;
-      track.style.transform = 'translateY(-' + (current * 72) + 'px)';
-      items[current].style.opacity = '1';
-      dots[current].classList.add('active');
-    }, 3000);
+    let started = false;
+
+    items[0].classList.add('active');
+
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting && !started) {
+          started = true;
+          setInterval(() => {
+            items[current].classList.remove('active');
+            dots[current].classList.remove('active');
+            current = (current + 1) % items.length;
+            items[current].classList.add('active');
+            dots[current].classList.add('active');
+          }, 3000);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    observer.observe(document.querySelector('#db-cycle-wrapper'));
   });
 </script>
 
