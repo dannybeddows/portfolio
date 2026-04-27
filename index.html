@@ -158,54 +158,74 @@
 </section>
 
 
+<!-- New Section with Two Columns -->
+<section class="my-5 py-sm-5">
+  <div class="container">
+    <div class="row">
 
-  <!-- New Section with Two Columns -->
-  <section class="my-5 py-sm-5">
-    <div class="container">
-      <!-- Create two columns -->
-      <div class="row">
-      <!-- First Column: Why Me Section -->  
-        <div class="col-md-8 mt-3">
-          <!-- Title above the sections -->
-       <span class="text-secondary mb-3 d-block text-center text-sm-start">Here's Why</span>
-          <div class="d-flex flex-column ms-4 ms-sm-0">
-            <li class="d-flex align-items-center py-2">
-              <p><span class="bullet"></span><strong>Native English Approach</strong> - I convey complex concepts to diverse audiences</p> 
-            </li>
-            <li class="d-flex align-items-center py-2">
-              <p><span class="bullet"></span> <strong>Passionate About Websites</strong> - curiously exploring websites since the 1990s</p>
-            </li>
-            <li class="d-flex align-items-center py-2">
-              <p><span class="bullet"></span> <strong>18+ Years Experience</strong> - I've worked exclusively in SEO and the web industries</p>
-            </li>
-            <li class="d-flex align-items-center py-2">
-              <p><span class="bullet"></span> <strong>Proven Growth Expertise</strong> - tangible ranking increases for hundreds of brand sites</p>
-            </li>
-            <li class="d-flex align-items-center py-2">
-              <p><span class="bullet"></span> <strong>Strategy and Hands-on</strong> - consultative work delivery or dive straight into the code</p>
-            </li>
+      <!-- First Column: Why Me Section -->
+      <div class="col-md-8 mt-3">
+        <span class="text-secondary mb-3 d-block text-center text-sm-start">Here's Why</span>
+        <div class="d-flex flex-column ms-4 ms-sm-0">
+          <li class="d-flex align-items-center py-2">
+            <p><span class="bullet"></span><strong>Native English Approach</strong> - I convey complex concepts to diverse audiences</p>
+          </li>
+          <li class="d-flex align-items-center py-2">
+            <p><span class="bullet"></span> <strong>Passionate About Websites</strong> - curiously exploring websites since the 1990s</p>
+          </li>
+          <li class="d-flex align-items-center py-2">
+            <p><span class="bullet"></span> <strong>18+ Years Experience</strong> - I've worked exclusively in SEO and the web industries</p>
+          </li>
+          <li class="d-flex align-items-center py-2">
+            <p><span class="bullet"></span> <strong>Proven Growth Expertise</strong> - tangible ranking increases for hundreds of brand sites</p>
+          </li>
+          <li class="d-flex align-items-center py-2">
+            <p><span class="bullet"></span> <strong>Strategy and Hands-on</strong> - consultative work delivery or dive straight into the code</p>
+          </li>
+        </div>
+      </div>
+
+      <!-- Second Column: Word Cycle Section -->
+      <div class="col-md-4 my-3 my-sm-0">
+        <div class="bg-dark p-4 position-relative overflow-hidden" style="border-left: 4px solid #2ecc71;">
+          <div id="db-cycle-wrapper" style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem 0;">
+            <div class="db-cycle-label">What I Bring</div>
+            <div class="db-cycle-window">
+              <div class="db-cycle-track">
+                <div class="db-cycle-item">SEO Expertise</div>
+                <div class="db-cycle-item">AI Orchestration</div>
+                <div class="db-cycle-item">Measurable Growth</div>
+              </div>
+            </div>
+            <div class="db-cycle-dots">
+              <div class="db-cycle-dot active"></div>
+              <div class="db-cycle-dot"></div>
+              <div class="db-cycle-dot"></div>
+            </div>
           </div>
         </div>
-        
-  
-  <!-- Second Column: Blockquote Section -->
-  <div class="col-md-4 my-3 my-sm-0">
-    <blockquote class="blockquote text-sm-center text-light bg-dark p-4 position-relative overflow-hidden">
-      <!-- Start Quote Icon (3x larger) -->
-      <i class="fa-solid fa-quote-left position-absolute display-5 top-0 start-0 mt-4 ms-4"></i>
-      
-      <p class="mt-4 mt-sm-0 font-italic px-5 text-center">
-        Combining proven SEO expertise with cutting-edge AI tools to unlock opportunities that deliver measurable growth.
-      </p>
-      
-      <!-- End Quote Icon (3x larger) -->
-      <i class="fa-solid fa-quote-right position-absolute display-5 bottom-0 end-0 mb-4 me-4"></i>
-    </blockquote>
+      </div>
+
+    </div>
   </div>
-</div>
-</div>
 </section>
 
+<script>
+  (function() {
+    const track = document.querySelector('.db-cycle-track');
+    const items = document.querySelectorAll('.db-cycle-item');
+    const dots  = document.querySelectorAll('.db-cycle-dot');
+    let current = 0;
+    setInterval(() => {
+      items[current].style.opacity = '0.2';
+      dots[current].classList.remove('active');
+      current = (current + 1) % items.length;
+      track.style.transform = 'translateY(-' + (current * 72) + 'px)';
+      items[current].style.opacity = '1';
+      dots[current].classList.add('active');
+    }, 3000);
+  })();
+</script>
 
 
 <!-- Tools Section -->
